@@ -1,0 +1,8 @@
+<h1>Pokemon List</h1>
+<div class="flex">
+    <div class="flex-item" *ngFor="let list of pokemons">
+        <img [src]="list.img" alt="">
+        <h2>{{list.name.english}}</h2>
+        <p>{{list.type[0]}} <span>{{list.type[1]}}</span></p>
+    </div>
+</div>
